@@ -16,6 +16,7 @@
     <string name="order_summary">order summary</string>
     <string name="whipped_cream">whipped cream</string>
     <string name="toppings">toppings</string>
+    <string name="name">Name</string>
 
 
 </resources>
