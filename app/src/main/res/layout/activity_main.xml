@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toppings"
+        android:textAllCaps="true"
+        android:textSize="16sp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "chocolate chip"
+        android:layout_marginTop="16dp"
+        android:onClick="chip"
+        android:id="@+id/chocolate"/>
+    <CheckBox
+        android:id="@+id/whipped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whipped_cream"
+        android:textSize="16dp"
+        android:onClick="addWhipped"/>
+
+<TextView
+    android:id="@+id/text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/quantity"
+    android:textAllCaps="true"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="16dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="substrat"
+        android:text="@string/f"
+        android:layout_marginTop="16dp"
+        android:id="@+id/B1"/>
+
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/u" />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="add"
+
+        android:text="@string/c"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/b1"/>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_summary"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="true"
+        android:id="@+id/price"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/_10"
+        android:id="@+id/price_text_view"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="sendMessage"
+        android:padding="20dp"
+        android:text="@string/order" />
+
+
+
+</android.widget.LinearLayout>
