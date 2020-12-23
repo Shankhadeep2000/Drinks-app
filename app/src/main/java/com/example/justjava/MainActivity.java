@@ -54,6 +54,9 @@ displa(priceMessage,checked,value,sure);
 
     public void add(View view) {
 quantity = quantity + 1;
+if(quantity>100){
+    quantity =100;
+}
         display(quantity);
     }
     private void display(int number){
@@ -64,6 +67,9 @@ quantity = quantity + 1;
 
     public void substrat(View view) {
         quantity = quantity -1;
+        if (quantity <1){
+            quantity = 1;
+        }
         displayprice(quantity);
     }
     private void displayprice(int number){
