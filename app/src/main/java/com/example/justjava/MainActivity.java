@@ -30,7 +30,13 @@ String priceMessage = value +"Total:" +   quantity * 5  +  "\n Thank You!";
 CheckBox addwhipped= (CheckBox) findViewById(R.id.whipped);
 boolean checked =addwhipped.isChecked();
 priceMessage += "\n whipped cream added" + checked;
-displa(priceMessage,checked);
+
+        EditText dash = (EditText) findViewById(R.id.name);
+        String value= dash.getText().toString();
+        CheckBox chocolate = (CheckBox) findViewById(R.id.chocolate);
+        boolean sure = chocolate.isChecked();
+        priceMessage+="\n chocolate chip added"+ sure;
+displa(priceMessage,checked,value,sure);
     }
 
 
@@ -40,9 +46,9 @@ displa(priceMessage,checked);
 //    }
 
 
-    private void displa(String message,  boolean checked , String name) {
+    private void displa(String message,  boolean checked , String name,boolean sure) {
         TextView priceTextView=(TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText(String.format("%s%s", message, checked,name));
+        priceTextView.setText(String.format("%s%s", message, checked,name,sure));
     }
 
 
